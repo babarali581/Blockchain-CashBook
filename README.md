@@ -30,7 +30,7 @@ It will give a string in your terminal  which is contractAddress.
 You should copy this string and paste in src/App.js as a value of contractAddress.
 
 
-# Your app will run on port 3000
+# Your app start Running ...
 
 
 ```shell
