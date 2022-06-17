@@ -1,6 +1,9 @@
 # Basic Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This is a Todo DApp for beginners. It is built on Hardhat (Javascript Framework For Blockchain). CRUD operations are performed in this app so it would be easy to understand for anyone how smart contracts work with the frontend. 
+
+[DEMO HERE](https://www.youtube.com/watch?v=OmYIul5Au1U)
+
 
 git clone https://github.com/babarali581/Accountancy.git
 
