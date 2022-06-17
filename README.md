@@ -25,6 +25,13 @@ Navigate to project in each of them
 
 npx hardhat run scripts/deploy.js --network localhost
 
+It will give a string in your terminal  which is contractAddress and it looks like this  
+//0x4826533B4897376654Bb4d4AD88B7faFD0C98528
+
+You should copy this string and paste in src/App.js Line 13.
+
+
+
 ```shell
 npx hardhat accounts
 npx hardhat compile

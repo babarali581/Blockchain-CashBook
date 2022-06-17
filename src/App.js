@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     const loadProvider = async () => {
-      let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+      let contractAddress = "Enter Key Here";
       const url = "http://localhost:8545";
       const provider = new ethers.providers.JsonRpcProvider(url);
       const contract = new ethers.Contract(
