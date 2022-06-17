@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     const loadProvider = async () => {
-      let contractAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707";
+      let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
       const url = "http://localhost:8545";
       const provider = new ethers.providers.JsonRpcProvider(url);
       const contract = new ethers.Contract(
@@ -44,25 +44,25 @@ function App() {
     setTimeout();
   };
 
-  const deleteItem =(index) => {
+  const deleteItem = (index) => {
     const signer = contract.connect(provider.getSigner());
-    signer.remove(index)
+    signer.remove(index);
     setTimeout(function () {
       window.location.reload(1);
     }, 500);
     setTimeout();
-  }
+  };
 
   let totalAmount = 0;
   let response = list.map((each, i) => {
-  let amount = parseInt(each.amount._hex, 16);
-  totalAmount = totalAmount += amount;
+    let amount = parseInt(each.amount._hex, 16);
+    totalAmount = totalAmount += amount;
     return (
       <div id={each.uid} className="colomn">
         <div>{each.sender}</div>
         <div>{amount}</div>
         <button className="remove-button" onClick={() => deleteItem(i)}>
-         X
+          X
         </button>
       </div>
     );
@@ -71,19 +71,35 @@ function App() {
     <div className="colomn">
       <div>Total Amount</div>
       <div>{totalAmount}</div>
-      <button style={{backgroundColor: "black" , color: "white"}} className="remove-button"> Total
+      <button
+        style={{ backgroundColor: "black", color: "white" }}
+        className="remove-button"
+      >
+        {" "}
+        Total
       </button>
     </div>
   );
 
   return (
     <div className="center">
+      <div className="hadding">Cash Book </div>
       <div className="enterDetail">
-      <input className="input" type="text" id="val" placeholder="Enter Description"></input>
-      <input className="input" type="number" id="num" placeholder=" Enter Number"></input>
-      <button className="button" onClick={addInList}>
-        ADD
-      </button>
+        <input
+          className="input"
+          type="text"
+          id="val"
+          placeholder="Enter Description"
+        ></input>
+        <input
+          className="input"
+          type="number"
+          id="num"
+          placeholder=" Enter Number"
+        ></input>
+        <button className="button" onClick={addInList}>
+          ADD
+        </button>
       </div>
       <div className="list">{list.length > 0 ? response : null}</div>
     </div>

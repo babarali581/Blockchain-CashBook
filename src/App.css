@@ -4,6 +4,13 @@
   align-items: center;
   justify-content: center;
 }
+.hadding {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+
+}
 .colomn {
   display: flex;
   /* border: 1px solid white; */
@@ -15,10 +22,10 @@
   width: 400px;
   height: 40px;
   border: 1px solid black;
-  align-content: center;
   text-align: center;
   background-color: white;
   justify-content: space-between;
+  padding-top: 5;
   border-radius: 20px
 }
 .enterDetail {
