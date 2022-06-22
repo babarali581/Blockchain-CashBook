@@ -1,5 +1,6 @@
 # Basic Sample Hardhat Project
 
+Data in the table is added or subtracted in the blockchain using a smart contract. 
 This is a Todo DApp for beginners. It is built on Hardhat (Javascript Framework For Blockchain). CRUD operations are performed in this app so it would be easy to understand for anyone how smart contracts work with the frontend. 
 
 [DEMO HERE](https://www.youtube.com/watch?v=OmYIul5Au1U)
