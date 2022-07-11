@@ -7,7 +7,10 @@ This is a Todo DApp for beginners. It is built on Hardhat (Javascript Framework 
 
 
 git clone https://github.com/babarali581/Accountancy.git
-
+ 
+ # Install hardhat
+ npm install --save-dev hardhat
+ 
 # Open 3 terminals
 
 Navigate to project in each of them
